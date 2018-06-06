@@ -1,0 +1,17 @@
+;;; Init
+
+
+;;; Theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'manoj-dark t)
+
+;;; Load
+(add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "snippets" user-emacs-directory))
+
+;;; Config
+(load "global")
+(load "editor")
+
+;;; Languages

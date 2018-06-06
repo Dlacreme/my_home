@@ -1,0 +1,69 @@
+                                   Insertion:
+i = insere a la position du curseur
+l = insere au debut de la ligne
+a = insere a la position droite du curseur
+A = insere a la fin de la ligne
+J = Joint la ligne suivante au bout de la ligne courante
+
+                           Enregistrement et sortie:
+:w         = sauvegarde le fichier
+:w nomfich = sauvegarde le fichier sous le nom nomfich
+:q         = quitter sans sauver
+:q!        = forcer a quitter
+:x ou :wq  = sauver et quitter
+
+                                  Alignement:
+:set textwidth=80      = Largeur d'une ligne du fichier
+:{range}center [width] = aligne au centre selon la range choisie
+:center                = aligne le texte au centre
+:right                 = aligne le texte a droite
+:left                  = aligne le texte a gauche
+
+                                  Indentation:
+:set nocindent     = Enleve l'indentation pour les fichiers *.c
+:set noautoindent  = Enleve l'indentation pour les fichiers *.c
+:set nopaste       = Enleve l'indentation pour les fichiers *.c
+:set autoindent    = Indentation automatique
+:set shiftwidth=4  = Largeur de l'indentation (8 par defaut)
+:set softtabstop=4 = Largeur d'un TAB
+:set tabstop=3     = Realigne un code en tabulation a la valeur 3
+:retab 8           = a la place de la valeur 8
+
+                                 Remplacement:
+:[range]s/from/to/[flags] = flags : g = pour toutes les occurences sur la ligne
+                                    c = demande de validation
+Exemple = s/^the/these/    = recherche en debut de ligne
+          1,5s/this/that/g = change sur les lignes 1 a 5
+          .,$s/yes/no/     = change depuis la ligne courante jusqu'a la fin
+
+                                  Effacement:
+dd = delete une ligne
+dw = delete un mot
+d$ = delete jusqu'a la fin de la ligne
+d^ = delete jusqu'au debut de la ligne
+x  = effacement du caractere sous le curseur
+X  = effacement du caractere a gauche du curseur
+
+                                  Copie:
+yy = Selectionne la ligne
+yw = Selectionne un mot
+y$ = Selectionne jusqu'a la fin de la ligne
+y^ = Selectionne jusqu'au debut de la ligne
+
+                                     Colle:
+p = colle le contenue de la copie ou de l'effacement en dessous
+P = colle le contenue de la copie ou de l'effacement au dessus
+
+                                  Changement:
+cd = change ligne
+cw = change mot
+c$ = change jusqu'a la fin de la ligne
+c^ = change jusqu'au debut de la ligne
+
+                                  Repetition:
+. = Repete la derniere action
+
+                                     Split:
+:vsp nomfich = Partage l'ecran verticalement avec chargement de nomfich
+:hsp nomfich = Partage l'ecran horizontalement avec chargemant de nomfich
+[CTRL]+w     = Change de split
