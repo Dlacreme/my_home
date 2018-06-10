@@ -49,7 +49,7 @@
 ;; XML
 (setq-default nxml-child-indent 2)
 ;; C
-(setq-default c-basic-offset 2)
+(setq-default c-basic-offset 4)
 ;; HTML etc with web-mode
 (setq-default web-mode-markup-indent-offset 2
               web-mode-css-indent-offset 2
