@@ -7,44 +7,47 @@ if [ -f /etc/bashrc ]; then
 fi
 
 source ~/.git-prompt.sh
+export PS1='\[\033[01;32m\]\u\[\033[0;34m\] [\@] \[\033[00;34m\] \w \[\033[01;34m\]$(__git_ps1)\[\033[01;36m\] \$\[\033[00m\] '
 
 # User specific aliases and functions
-alias ne='emacs -nw'
-alias e='emacs -nw'
-alias cn='rm -f \#*# *~'
-alias cno='rm -f \#*# *~ *.o'
-alias ns='/home/dlacreme/.nsperl'
-alias nasm='nasm -f elf64'
-alias sl='ls'
-alias gp='g++ -W -Wall -Werror'
-alias xampp='/opt/lampp/lampp start'
-alias ls='ls --color'
-alias v='vim'
 alias vi='vim'
+alias v='vim'
+alias ne='emacs -nw'
+alias e='ne'
+alias ls='ls --color'
 alias us='setxkbmap us'
 alias fr='setxkbmap fr'
 alias us_i='setxkbmap us -variant alt-intl'
-alias vga_right='xrandr --output VGA-1 --right-of LVDS-1'
-alias vga_left='xrandr --output VGA-1 --left-of LVDS-1'
-alias php_log='tail -f /var/log/httpd/error_log'
-alias clean_php_log='echo "" > /var/log/httpd/error_log'
 alias 3w='cd /var/www/html'
-alias ovh='ssh root@vps95998.ovh.net'
-alias to_svg='echo autotrace file.jpg --output-file output.svg --output-form svg'
-alias node='nodejs'
-alias use_rails='rvm use ruby-2.4.1@rails5.1'
+alias b_scan='hcitool scan'
+alias xrandr_left='xrandr --output eDP-1-1 --left-of DP-1-3'
+alias xrandr_right='xrandr --output eDP-1-1 --right-of DP-1-3'
 
 export TERM='xterm-256color'
-export PS1='\[\033[01;32m\]\u\[\033[0;34m\] [\@] \[\033[00;34m\] \w \[\033[01;34m\]$(__git_ps1)\[\033[01;36m\] \$\[\033[00m\] '
 
-export PATH=$PATH:/home/dlacreme/.cargo/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$PATH:$HOME/.npm/bin"
+export PATH=~/.local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
 
-#gogo
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /home/dlacreme/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /home/dlacreme/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /home/dlacreme/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/dlacreme/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
 
-export PTOOLSPATH=/home/dlacreme/.app/phalcon-devtools/
-export PATH=$PATH:/home/dlacreme/.app/phalcon-devtools
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /home/dlacreme/souqalmal/home-insurance-app/node_modules/tabtab/.completions/slss.bash ] && . /home/dlacreme/souqalmal/home-insurance-app/node_modules/tabtab/.completions/slss.bash
+export PATH="/home/dlacreme/.nvm/versions/node/v10.6.0/bin:/home/dlacreme/.cargo/bin:/home/dlacreme/.local/bin:/home/dlacreme/.rbenv/plugins/ruby-build/bin:/home/dlacreme/.rbenv/shims:/home/dlacreme/.rbenv/bin:/home/dlacreme/.cargo/bin:/home/dlacreme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/go/bin:/home/dlacreme/.npm/bin:/home/dlacreme/.vimpkg/bin"
+
+export PATH="/home/dlacreme/.nvm/versions/node/v10.6.0/bin:/home/dlacreme/.cargo/bin:/home/dlacreme/.local/bin:/home/dlacreme/.rbenv/plugins/ruby-build/bin:/home/dlacreme/.rbenv/shims:/home/dlacreme/.rbenv/bin:/home/dlacreme/.cargo/bin:/home/dlacreme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/go/bin:/home/dlacreme/.npm/bin:/home/dlacreme/.vimpkg/bin:/home/dlacreme/.vimpkg/bin"

@@ -2,7 +2,7 @@
 (add-to-list 'load-path (expand-file-name "modules/nav" user-emacs-directory))
 (require 'nav)
 (nav-disable-overeager-window-splitting)
-(global-set-key (kbd "<f8>") 'nav-toggle)
+(global-set-key (kbd "<f1>") 'nav-toggle)
 
 ;; This allows global-hl-line be disabled for certain buffers (nav in our case)
 (make-variable-buffer-local 'global-hl-line-mode)

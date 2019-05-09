@@ -1,6 +1,4 @@
-;; Or, if you use `use-package', do something like this:
-(use-package dracula-theme
-  :init (progn (load-theme 'dracula t t)
-               (enable-theme 'dracula))
-  :defer t
-  :ensure t)
+;;; Or, if you use `use-package', do something like this:
+
+(add-hook 'after-init-hook 
+	  (lambda () (load-theme 'cyberpunk t)))

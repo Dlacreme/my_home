@@ -1,7 +1,14 @@
 ;; Hide some things
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+;(scroll-bar-mode -1)
+
+;(global-set-key (kbd "<mouse-2>") 'clipboard-yank)
+;(setq x-select-enable-clipboard t)
+;(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+;(setq x-select-enable-primary t)
+
+(show-paren-mode 1)
 
 ;; Lines and columns
 (column-number-mode t)
@@ -17,10 +24,7 @@
 (display-time-mode t)
 
 ;; Set standard indent to 2 rather that 4
-(setq standard-indent 2)
-
-;; Improve scrolling
-(mouse-wheel-mode t)
+(setq standard-indent 4)
 
 ;; Use space instead of tabs
 (setq-default indent-tabs-mode nil)
@@ -34,13 +38,11 @@
 (setq require-final-newline nil)
 
 ;; Set default indentation for various languages (add your own!)
-(setq-default tab-width 2)
+(setq-default tab-width 4)
 ;; Javascript
 (setq-default js2-basic-offset 2)
 ;; JSON
 (setq-default js-indent-level 2)
-;; Coffeescript
-(setq coffee-tab-width 2)
 ;; Typescript
 (setq typescript-indent-level 2
       typescript-expr-indent-offset 2)

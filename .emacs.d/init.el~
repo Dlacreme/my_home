@@ -7,7 +7,7 @@
 
 ;;; Config
 (load "init")
-(load "dorg")
+(load "org")
 (load "global")
 (load "editor")
 
