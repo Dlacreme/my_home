@@ -39,6 +39,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'w0rp/ale'
 Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
+Plugin 'leafgarland/typescript-vim'
+" Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()            " required
 
