@@ -1,0 +1,38 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.detectIndentation": false,
+  "editor.fontLigatures": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorTheme": "Cold Horizon",
+  "window.menuBarVisibility": "toggle",
+  "explorer.autoReveal": false,
+  "editor.formatOnSave": true,
+  "explorer.openEditors.visible": 0,
+  "[typescript]": {
+      "editor.tabSize": 2,
+      "editor.autoClosingBrackets": "never",
+      "editor.autoClosingQuotes": "never"
+  },
+  "[scss]": {
+      "editor.tabSize": 2
+  },
+  "[html]": {
+      "editor.tabSize": 2
+  },
+  "[rust]": {
+      "editor.tabSize": 4,
+      "editor.formatOnSave": false,
+      "editor.autoClosingBrackets": "never",
+      "editor.autoClosingQuotes": "never"
+  },
+  "[json]": {
+      "editor.tabSize": 2
+  },
+  "[python]": {
+      "editor.formatOnSave": false
+  },
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": 0,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+}

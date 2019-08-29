@@ -23,6 +23,8 @@ au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
+let g:rustfmt_autosave = 1
+
 
 """ Package Manager
 
@@ -34,17 +36,21 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' "required
-
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'w0rp/ale'
 Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'leafgarland/typescript-vim'
-" Plugin 'Quramy/tsuquyomi'
-
+Plugin 'Quramy/tsuquyomi'
+Plugin 'majutsushi/tagbar'
+Plugin 'jceb/vim-orgmode'
+Plugin 'tpope/vim-speeddating' " orgmode dependencies
 call vundle#end()            " required
-
 filetype plugin indent on    " required
+
+
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
 
 """ VIM as IDE
 

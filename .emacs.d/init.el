@@ -25,7 +25,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (company xclip kaolin-themes use-package tide racer go-mode flycheck-rust ethan-wspace dracula-theme cargo auto-complete))))
+    (cyberpunk-theme cyberpunk-2019-theme company xclip kaolin-themes use-package tide racer go-mode flycheck-rust ethan-wspace dracula-theme cargo auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
