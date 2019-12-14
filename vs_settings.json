@@ -4,10 +4,9 @@
   "editor.detectIndentation": false,
   "editor.fontLigatures": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.colorTheme": "Cold Horizon",
   "window.menuBarVisibility": "toggle",
   "explorer.autoReveal": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "explorer.openEditors.visible": 0,
   "[typescript]": {
       "editor.tabSize": 2,
@@ -18,7 +17,8 @@
       "editor.tabSize": 2
   },
   "[html]": {
-      "editor.tabSize": 2
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
   },
   "[rust]": {
       "editor.tabSize": 4,
@@ -32,7 +32,20 @@
   "[python]": {
       "editor.formatOnSave": false
   },
+  "[markdown]": {
+      "editor.formatOnSave": true
+  },
+  "[crystal]": {
+      "editor.tabSize": 2
+  },
+  "[nim]": {
+      "editor.tabSize": 2
+  },
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "typescript.updateImportsOnFileMove.enabled": "never",
+  "files.associations": {
+      "*.html": "html"
+  },
+  "workbench.colorTheme": "Horizon Bright",
 }

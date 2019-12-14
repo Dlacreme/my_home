@@ -17,3 +17,4 @@ clean=(
 )
 
 for i in "${clean[@]}"; do rm -rf $i ; done
+
