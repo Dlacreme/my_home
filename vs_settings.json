@@ -36,16 +36,22 @@
       "editor.formatOnSave": true
   },
   "[crystal]": {
-      "editor.tabSize": 2
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true
   },
   "[nim]": {
       "editor.tabSize": 2
   },
+  "[dart]": {
+      "editor.formatOnSave": true
+  },
   "workbench.activityBar.visible": false,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": -1,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "files.associations": {
       "*.html": "html"
   },
   "workbench.colorTheme": "Horizon Bright",
+  "C_Cpp.updateChannel": "Insiders",
+  "explorer.confirmDragAndDrop": false
 }
