@@ -1,6 +1,6 @@
 "" Colors
 set termguicolors
-colorscheme cryslominsa
+colorscheme coldhorizon
 
 "" Config
 syntax on
@@ -39,7 +39,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'bitc/vim-bad-whitespace'
-
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'mhinz/vim-mix-format'
+call vundle#end()
 filetype plugin indent on
 
 "" Keybinding
@@ -54,6 +56,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 let g:ycm_confirm_extra_conf = 0
+let g:mix_format_on_save = 1
 
 "" Crystal
 let g:crystal_auto_format = 1
