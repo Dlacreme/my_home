@@ -1,66 +1,92 @@
-{
-  "editor.minimap.enabled": false,
-  "editor.fontFamily": "Fira Code",
-  "editor.detectIndentation": false,
-  "editor.fontLigatures": true,
-  "files.trimTrailingWhitespace": true,
-  "window.menuBarVisibility": "toggle",
-  "explorer.autoReveal": false,
-  "editor.formatOnSave": false,
-  "explorer.openEditors.visible": 0,
-  "[typescript]": {
-      "editor.tabSize": 2,
-      "editor.autoClosingBrackets": "never",
-      "editor.autoClosingQuotes": "never"
-  },
-  "[scss]": {
-      "editor.tabSize": 2
-  },
-  "[html]": {
-      "editor.tabSize": 2,
-      "editor.formatOnSave": true
-  },
-  "[rust]": {
-      "editor.tabSize": 4,
-      "editor.formatOnSave": false,
-      "editor.autoClosingBrackets": "never",
-      "editor.autoClosingQuotes": "never"
-  },
-  "[json]": {
-      "editor.tabSize": 2
-  },
-  "[python]": {
-      "editor.formatOnSave": false
-  },
-  "[markdown]": {
-      "editor.formatOnSave": true
-  },
-  "[crystal]": {
-      "editor.tabSize": 2,
-      "editor.formatOnSave": true
-  },
-  "[nim]": {
-      "editor.tabSize": 2
-  },
-  "[dart]": {
-      "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-      "editor.tabSize": 2
-  },
-  "[mint]": {
-      "editor.tabSize": 2
-  },
-  "workbench.activityBar.visible": false,
-  "window.zoomLevel": 0,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "files.associations": {
-      "*.html": "html"
-  },
-  "workbench.colorTheme": "Cold Horizon",
-  "C_Cpp.updateChannel": "Insiders",
-  "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+{    
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.detectIndentation": false,
+    "editor.fontLigatures": true,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+    "explorer.autoReveal": false,
+    "editor.formatOnSave": false,
+    "explorer.openEditors.visible": 0,
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never"
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+        "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never"
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.formatOnSave": false
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true
+    },
+    "[crystal]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "[nim]": {
+        "editor.tabSize": 2
+    },
+    "[dart]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
+    "[mint]": {
+        "editor.tabSize": 2
+    },
+    "[elixir]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+    },
+    "[eex]": {
+        "editor.tabSize": 2,
+    },
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "files.associations": {
+        "*.html": "html"
+    },
+    "workbench.colorTheme": "Cold Horizon",
+    "C_Cpp.updateChannel": "Insiders",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "go.formatTool": "goimports"
 }
