@@ -1,0 +1,108 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.detectIndentation": false,
+    "editor.fontLigatures": true,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+    "explorer.autoReveal": false,
+    "editor.formatOnSave": true,
+    "explorer.openEditors.visible": 0,
+    "editor.quickSuggestionsDelay": 200,
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never"
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": false,
+        "editor.autoClosingBrackets": "never",
+        "editor.autoClosingQuotes": "never"
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.formatOnSave": false
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true
+    },
+    "[crystal]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "[nim]": {
+        "editor.tabSize": 2
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.quickSuggestionsDelay": 2000
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
+    "[mint]": {
+        "editor.tabSize": 2
+    },
+    "[elixir]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 2,
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.trimAutoWhitespace": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+    },
+    "[eex]": {
+        "editor.tabSize": 2,
+    },
+    "[exs]": {
+        "editor.tabSize": 2,
+    },
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "files.associations": {
+        "*.html": "html",
+        "*.heex": "phoenix-heex"
+    },
+    "workbench.colorTheme": "Cold Horizon",
+    "C_Cpp.updateChannel": "Insiders",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "go.formatTool": "goimports",
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "extensions.ignoreRecommendations": true,
+    "emmet.includeLanguages": {
+        "phoenix-heex": "html"
+    },
+    "workbench.activityBar.visible": false
+}

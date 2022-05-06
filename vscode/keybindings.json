@@ -1,0 +1,37 @@
+[
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "alt+shift+`",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "alt+`",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+/",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "type",
+        "args": {
+            "text": "|> "
+        }
+    },
+    {
+        "key": "ctrl+f",
+        "command": "actions.findWithSelection"
+    }
+]
