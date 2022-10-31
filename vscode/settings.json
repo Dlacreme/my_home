@@ -9,6 +9,8 @@
     "editor.formatOnSave": true,
     "explorer.openEditors.visible": 0,
     "editor.quickSuggestionsDelay": 200,
+    "zenMode.hideTabs": false,
+    "zenMode.hideLineNumbers": false,
     "[typescript]": {
         "editor.tabSize": 2,
         "editor.autoClosingBrackets": "never",
@@ -104,5 +106,7 @@
     "emmet.includeLanguages": {
         "phoenix-heex": "html"
     },
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true,
     "workbench.activityBar.visible": false
 }
