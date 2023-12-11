@@ -10,11 +10,13 @@ source ~/.git-prompt.sh
 export PS1='\[\033[01;32m\]\u\[\033[0;34m\] [\@] \[\033[00;34m\] \w \[\033[01;34m\]$(__git_ps1)\[\033[01;36m\] \$\[\033[00m\] '
 
 # User specific aliases and functions
+alias ggraph='git log --oneline --graph --decorate'
+alias icl='rlwrap sbcl'
 alias vi='vim'
 alias v='vim'
-alias ne='emacs -nw'
+alias e='hx -c ~/.config/helix/config.toml'
+alias ne='emacs28 -nw'
 alias n='nvim'
-alias e='ne'
 alias ls='ls --color'
 alias us='setxkbmap us'
 alias fr='setxkbmap fr'
@@ -28,7 +30,12 @@ alias brightness_high='xrandr --output eDP-1 --brightness 1'
 alias openssl-x509-inspect="openssl x509 -noout -text -in"
 alias openssl-x509-dates="openssl x509 -noout -dates -in"
 alias hosts="sudo vim /etc/hosts"
+alias killdocker="docker container kill $(docker container ls -q)"
 alias minictl="minikube kubectl --"
+recent() {
+    history | grep --color "$1" | sed 's/^ *[0-9]* *//' | tac | awk '!seen[$0]++' | tac
+    #| sed 's/^ *[0-9]* *//'
+}
 openssl-x509-fingerprint() {
   crt=$1
   for format in md5 sha1 sha256 sha512 sha3-256 sha3-512; do
@@ -36,7 +43,9 @@ openssl-x509-fingerprint() {
   done
 }
 
-# Export common binary folders
+# Exports
 export PATH="$PATH:/$HOME/.local/bin"
-
-# Export specific binaries
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+export PATH=$HOME/.asdf/shims:$PATH

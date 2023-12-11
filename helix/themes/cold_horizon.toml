@@ -1,0 +1,64 @@
+## Author dlacreme <dlacreme@gmail.com>
+# URL: https://github.com/dlacreme/cold_horizon
+# Based on https://github.com/vncntx/cold-horizon
+
+# Syntax
+"attribute" = "light"
+"type" = "blue"
+"type.builtin" = "blue_light"
+"constructor" = "green_light"
+"constant" = "pink"
+"constant.builtin" = "blue_light"
+"constant.character.escape" = "red"
+"constant.numeric" = "pink_dark"
+"string" = "orange"
+"string.regex" = "pink_light"
+"string.special.symbol" = "pink_dark"
+"comment" = {fg = "grey", modifiers = ["italic"]}
+"variable" = "white"
+"variable.builtin" = {fg = "white", modifiers = ["italic"]}
+"variable.parameter" = {fg = "grey_light", modifiers = ["italic"]}
+"variable.other.member" = "grey_light"
+"label" = "green_light"
+"punctuation" = "white"
+"punctuation.special" = "grey_light"
+"keyword" = "blue_light"
+"keyword.control.import" = "purple"
+"namespace" = {fg = "white", modifiers = ["italic"]}
+
+"function" = "green"
+"function.builtin" = "green"
+"function.macro" = "green"
+
+# UI
+"ui.background" = {bg = "bg0"}
+"ui.color.select" = {bg = "dark", fg = "blue_light"}
+"ui.selection" = {bg = "cyan", fg = "dark"}
+"ui.linenr" = {fg = "grey"}
+"ui.linenr.selected" = {fg = "white"}
+"ui.statusline" = {fg = "grey_light", modifiers = ["italic"]}
+"warning" = {bg = "bg0", fg = "orange"}
+"error" = {bg = "bg0", fg = "red"}
+"info" = {bg = "bg0", fg = "blue"}
+"hint" = {bg = "bg0", fg = "blue"}
+"diagnostic" = {bg = "dark"}
+"diagnostic.error" = {bg = "dark", fg = "red"}
+
+[palette]
+bg0 = "#1C1E26"
+white = "#FFFFFF"
+dark = "#1b292e"
+green = "#14D386"
+green_light = "#0AF29D"
+grey = "#828a9a"
+grey_light = "#DDDDDD"
+cyan = "#1FDAD9"
+red = "#ff0000"
+blue = "#0000ff"
+blue_light = "#56C2EA"
+yellow = "#00ff00"
+orange = "#f9ca99"
+pink_dark = "#E06783"
+pink = "#F09483"
+pink_light = "#FAB795"
+purple = "#af00ff"

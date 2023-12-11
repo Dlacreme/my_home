@@ -1,0 +1,41 @@
+theme = "cold_horizon"
+
+## cheatsheet
+# space+/ => global search 
+
+[keys.normal]
+d = { d = ["extend_line_below", "delete_selection"] }
+s = ["delete_selection"]
+"tab" = "goto_next_function" # Select and jump to the next function via Treesitter
+"S-tab" = "goto_prev_function" # Select and jump to the previous function via Treesitter
+"#" = "toggle_comments"
+
+[keys.insert]
+C-backspace = "delete_word_backward"
+
+[keys.normal."["]
+"[" = "goto_previous_buffer"
+
+[keys.normal."]"]
+"]" = "goto_next_buffer" 
+
+[editor]
+mouse = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+# display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
