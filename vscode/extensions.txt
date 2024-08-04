@@ -1,7 +1,0 @@
-Better TOML
-Cold Horizon Theme
-ElixirLS
-ESLint
-gettext
-vim
-Phoenix Framework
