@@ -1,11 +1,15 @@
-autochdir = true
 require('config')
+require('editor')
+require('colors')
 require('plugins')
 require('code-completion')
 require('file-explorer')
+require('github-copilot')
 require('keys')
 
-require('mason-config')
 -- LS config
-require('gopls')
--- require('elixir-ls')
+require('mason-config')
+require('go')
+require('elixir')
+require('ruby')
+

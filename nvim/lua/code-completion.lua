@@ -20,7 +20,7 @@ cmp.setup({
     -- CTRL+SPACE to bring up completion at current Cursor location
     ['<C-Space>'] = cmp.mapping.complete(),
     -- CTRL+e to exit suggestion and close it
-    ['<C-e>'] = cmp.mapping.close(),
+    ['<C-x>'] = cmp.mapping.close(),
     -- CR (enter or return) to CONFIRM the currently selection suggestion
     -- We set the ConfirmBehavior to insert the Selected suggestion
     ['<CR>'] = cmp.mapping.confirm({

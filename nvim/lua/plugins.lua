@@ -3,6 +3,17 @@ return require('packer').startup(function(use)
 	use 'williamboman/mason.nvim'   
         use 'williamboman/mason-lspconfig.nvim'
         use 'neovim/nvim-lspconfig' 
+	use { "catppuccin/nvim", as = "catppuccin" }
+	use 'nvim-treesitter/nvim-treesitter'
+	use "lukas-reineke/indent-blankline.nvim"
+	use "folke/zen-mode.nvim"
+	-- github copilot
+	use 'github/copilot.vim'
+
+	use {
+		'CopilotC-Nvim/CopilotChat.nvim',
+		requires = { "nvim-lua/plenary.nvim" }
+	}
 	-- Hrsh7th Code Completion Suite
 	use 'hrsh7th/nvim-cmp' 
 	use 'hrsh7th/cmp-nvim-lsp'
