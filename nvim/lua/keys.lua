@@ -25,7 +25,12 @@ vim.api.nvim_set_keymap('n', '<leader>7', '7gt', opts)
 vim.api.nvim_set_keymap('n', '<leader>8', '8gt', opts)
 vim.api.nvim_set_keymap('n', '<leader>9', '9gt', opts)
 vim.api.nvim_set_keymap('n', '<leader>0', ':tablast<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>-', ':tab new<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>=', ':tab close<CR>', opts)
 
 vim.api.nvim_set_keymap('n', 'gh', [[:lua copilotchat_quick_chat()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'hg', ":CopilotToggle<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('i', '<leader>.', '|> ', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float(0, {scope="line"})<CR>', { noremap = true, silent = true })

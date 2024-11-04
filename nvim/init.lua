@@ -11,5 +11,8 @@ require('keys')
 require('mason-config')
 require('go')
 require('elixir')
+require('gleam')
 require('ruby')
 
+-- Other
+--require('neorg')

@@ -1,0 +1,1 @@
+lspconfig.gleam.setup({})

@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 	use "lukas-reineke/indent-blankline.nvim"
 	use "folke/zen-mode.nvim"
+	use 'f-person/git-blame.nvim'
+	use 'gleam-lang/gleam.vim'
 	-- github copilot
 	use 'github/copilot.vim'
 
@@ -32,4 +34,7 @@ return require('packer').startup(function(use)
 		'nvim-tree/nvim-tree.lua',
 		requires = { 'nvim-tree/nvim-web-devicons' },
 	}
+
+	-- Project manager
+	use 'nvim-neorg/neorg'
 end)
