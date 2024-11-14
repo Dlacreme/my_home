@@ -29,3 +29,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+-- require("oil").setup({
+--    default_file_explorer = false
+-- })
