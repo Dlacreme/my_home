@@ -1,14 +1,16 @@
-require('config.keymap')
+require('config.pre_lazy')
 require('config.lazyvim')
 require('config.colors')
 require('config.editor')
 require('config.code-completion')
 require('config.file-explorer')
 require('config.github-copilot')
-require('config.lsp')
+require('config.keymap')
 
 -- LSP
+require('config.lsp')
 require('lsp.elixir')
+require('lsp.ruby')
 
 -- LS config
 -- require('mason-config')

@@ -1,13 +1,11 @@
 local map = vim.api.nvim_set_keymap
-map('n', 'mm',  [[:NvimTreeToggle<CR>]], {})
-
-vim.g.mapleader = ';'
+map('n', 'mm',  [[:Neotree toggle<CR>]], {})
 
 vim.keymap.set('n', '<leader>q', ':bprevious<bar>bdelete #<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>w', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>', { noremap = true, silent = true })
 
 local telescope_builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', telescope_builtin.find_files, {})
+-- vim.keymap.set('n', '<leader>f', telescope_builtin.find_files, {})
 vim.keymap.set('n', '<leader>g', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>d', telescope_builtin.buffers, {})
 vim.keymap.set('n', '<leader>h', telescope_builtin.help_tags, {})

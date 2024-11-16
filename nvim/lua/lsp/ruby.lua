@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+vim.lsp.set_log_level("debug")
 
 lspconfig.ruby_lsp.setup({})
 
