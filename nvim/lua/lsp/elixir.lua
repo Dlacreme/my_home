@@ -10,5 +10,5 @@ lspconfig.elixirls.setup({
  	 elixirLS = {
  	   dialyzerEnabled = false,
  	   fetchDeps = false,
-};
+  };
 })

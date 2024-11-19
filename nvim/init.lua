@@ -11,6 +11,7 @@ require('config.keymap')
 require('config.lsp')
 require('lsp.elixir')
 require('lsp.ruby')
+require('lsp.javascript')
 
 -- LS config
 -- require('mason-config')

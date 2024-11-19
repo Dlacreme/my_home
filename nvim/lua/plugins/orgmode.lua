@@ -5,8 +5,8 @@ return {{
   config = function()
     -- Setup orgmode
     require('orgmode').setup({
-      org_agenda_files = '~/orgfiles/**/*',
-      org_default_notes_file = '~/orgfiles/refile.org',
+      org_agenda_files = '~/notes/agenda/**/*',
+      org_default_notes_file = '~/notes/default.org',
     })
   end,
 }}

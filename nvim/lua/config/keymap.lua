@@ -26,6 +26,9 @@ vim.api.nvim_set_keymap('n', '<leader>0', ':tablast<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>-', ':tab new<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>=', ':tab close<CR>', opts)
 
+-- copy current filepath to clipboard
+vim.api.nvim_set_keymap('n', '<leader>p', ':let @+ = expand("%")<CR>', opts)
+
 vim.api.nvim_set_keymap('n', 'gh', [[:lua copilotchat_quick_chat()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'hg', ":CopilotToggle<CR>", { noremap = true, silent = true })
 
